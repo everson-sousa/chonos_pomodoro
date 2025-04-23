@@ -1,0 +1,9 @@
+body {
+  background-color: brown;
+}
+h1 {
+  background-color: blanchedalmond;
+}
+p {
+  color: var(--primary);
+}
