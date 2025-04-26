@@ -2,12 +2,16 @@ import { Heading } from './components/Heading';
 
 import './styles/theme.css';
 import './styles/global.css';
+import { TimerIcon } from 'lucide-react';
 
 export function App() {
   return (
     <>
-      <Heading attr={121} attr2='Teste'>
+      <Heading>
         Olá mundo 1!
+        <button>
+          <TimerIcon />
+        </button>
       </Heading>
       <p>
         O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto
