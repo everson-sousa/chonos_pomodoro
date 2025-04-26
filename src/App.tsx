@@ -4,10 +4,11 @@ import './styles/theme.css';
 import './styles/global.css';
 
 export function App() {
-  console.log('Oi');
   return (
     <>
-      <Heading />
+      <Heading attr={121} attr2='Teste'>
+        Olá mundo 1!
+      </Heading>
       <p>
         O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto
         da indústria tipográfica e de impressos, e vem sendo utilizado desde o
