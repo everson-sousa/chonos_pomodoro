@@ -2,28 +2,23 @@ import { Heading } from './components/Heading';
 
 import './styles/theme.css';
 import './styles/global.css';
-import { TimerIcon } from 'lucide-react';
+import { Container } from './components/Container';
 
 export function App() {
   return (
     <>
-      <Heading>
-        Olá mundo 1!
-        <button>
-          <TimerIcon />
-        </button>
-      </Heading>
-      <p>
-        O que é Lorem Ipsum? Lorem Ipsum é simplesmente uma simulação de texto
-        da indústria tipográfica e de impressos, e vem sendo utilizado desde o
-        século XVI, quando um impressor desconhecido pegou uma bandeja de tipos
-        e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum
-        sobreviveu não só a cinco séculos, como também ao salto para a
-        editoração eletrônica, permanecendo essencialmente inalterado. Se
-        popularizou na década de 60, quando a Letraset lançou decalques contendo
-        passagens de Lorem Ipsum, e mais recentemente quando passou a ser
-        integrado a softwares de editoração eletrônica como Aldus PageMaker.
-      </p>
+      <Container>
+        <Heading>Logo</Heading>
+      </Container>
+      <Container>
+        <Heading>Menu</Heading>
+      </Container>
+      <Container>
+        <Heading>Form</Heading>
+      </Container>
+      <Container>
+        <Heading>Footer</Heading>
+      </Container>
     </>
   );
 }
