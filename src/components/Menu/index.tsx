@@ -5,6 +5,12 @@ import { useState } from 'react';
 type AvailableThemes = 'dark' | 'light';
 export function Menu() {
   const [theme, setTheme] = useState<AvailableThemes>('dark');
+
+  function handleThemeChange(
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+  ) {
+    console.log('Clicado', Date.now());
+  }
   return (
     <nav className={styles.menu}>
       <h1>{theme}</h1>
@@ -40,6 +46,7 @@ export function Menu() {
         href='#'
         aria-label='Alterar Thema'
         title='Alterar Tema'
+        onClick={handleThemeChange}
       >
         <SunIcon />
       </a>
