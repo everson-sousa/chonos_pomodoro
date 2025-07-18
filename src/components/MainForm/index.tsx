@@ -14,7 +14,7 @@ export function MainForm() {
           placeholder='Digite Algo'
         />
       </div>
-      <div class='formRow'>
+      <div className='formRow'>
         <p>Lorem ipsum...</p>
       </div>
       <div className='formRow'>
