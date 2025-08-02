@@ -3,6 +3,7 @@ import './styles/global.css';
 import { Home } from './pages/Home';
 import { useState } from 'react';
 import { TaskStateModel } from './models/TaskStateModel';
+import { TaskContext } from './contexts/TaskContext';
 
 // export type TaskStateModel = {
 //   tasks: TaskModel[];
@@ -33,5 +34,9 @@ const initialState: TaskStateModel = {
 export function App() {
   const [state, setState] = useState(initialState);
 
-  return <Home />;
+  return (
+    <TaskContext.Provider value={{ outroValor: 91011 }}>
+      <Home />
+    </TaskContext.Provider>
+  );
 }
