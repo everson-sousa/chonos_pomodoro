@@ -5,5 +5,5 @@ export type TaskModel = {
   startDate: number | null; //quando o timer chega no final
   completeDate: number | null; //quando a task é interrompida
   interruptDate: number | null;
-  type: 'workTime' | 'shortBraekTime' | 'longBreakTime';
+  type: 'workTime' | 'shortBreakTime' | 'longBreakTime';
 };
