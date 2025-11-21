@@ -13,7 +13,7 @@
 .cycleDot {
   width: 2rem;
   height: 2rem;
-  background-color: var(--primary);
+  background-color: var(--warning);
   border-radius: 50%;
 }
 .worktime {
